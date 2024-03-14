@@ -6,4 +6,8 @@ typedef struct {
     float y;
 } Point;
 
+void escribirPoint(Point* puntos, int size);
+Point* leerPoint(int size);
+void printPoint(Point p);
+
 #endif
