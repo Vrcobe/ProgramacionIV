@@ -12,7 +12,8 @@ int main(void)
     asignatura asignaturas[5];
     do{
         printf("1.Introducir asignatura\n2.MostrarListado\n3.Calcular media\nIntroduce q para salir\nIntroduce la opcion seleccionada:");
-        scanf("%d",&letra);
+        scanf("%c",&letra);
+        fflush(stdin);
         
         switch(letra){
             case '1':
@@ -25,7 +26,7 @@ int main(void)
                 fgets(nombre,15,stdin);
                 float nota;
                 sscanf(nombre,"%f",&nota);
-                
+                printf("%f",nota); 
             case 'q':
                 printf("Saliendo");
                break;
